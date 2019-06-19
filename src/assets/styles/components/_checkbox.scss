@@ -1,0 +1,13 @@
+.mat-checkbox-layout {
+    margin-bottom: 0;
+}
+
+.mat-checkbox-label {
+    color: $text--clr;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-checkbox-frame {
+    background-color: $brand--clr;
+}

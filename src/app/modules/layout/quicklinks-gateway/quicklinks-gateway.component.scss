@@ -1,0 +1,18 @@
+@import './../../../../assets/styles/required';
+.box-shade {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    transition: all 0.2s ease-in;
+    &:hover,
+    &:focus,
+    &:active {
+        bottom: calcRem(7px);
+        transition: all 0.2s ease-in;
+        background-color: beige !important;
+    }
+}
+
+.login-bg {
+    background: url("./../../../../assets/images/login-bg.jpg") 0 0/cover no-repeat;
+}

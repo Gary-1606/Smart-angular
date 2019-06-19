@@ -1,0 +1,103 @@
+html,
+body {
+    height: 100%;
+    font-family: $font-regular;
+}
+
+a {
+    color: $link--clr;
+    font-family: $font-regular;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+    color: $link--hover-clr;
+}
+
+a.text-underline:hover,
+a.text-underline:focus {
+    text-decoration: underline;
+}
+
+.wrapper,
+app-root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100%;
+}
+
+.footer,
+.header {
+    flex-grow: 0;
+}
+
+/**** Common ****/
+
+.row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    [class^="col"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+/* login module */
+
+.login-container {
+    width: calcRem(385px);
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12);
+}
+
+.login-logo {
+    width: calcRem(128px);
+    height: calcRem(130px);
+}
+
+.box-shadow {
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12);
+}
+
+.login-left-panel {
+    &~ :nth-child(3) {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+/* Error */
+
+.input-error {
+    position: absolute;
+    font-size: calcRem(13px);
+    bottom: 0;
+}
+
+.mat-checkbox~.input-error {
+    bottom: calcRem(-16px);
+}

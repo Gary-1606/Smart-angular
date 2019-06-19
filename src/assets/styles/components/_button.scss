@@ -1,0 +1,16 @@
+.mat-fab,
+.mat-mini-fab,
+.mat-raised-button {
+    background-color: $brand--clr;
+}
+
+.mat-button,
+.mat-fab,
+.mat-icon-button,
+.mat-mini-fab,
+.mat-raised-button {
+    color: $white !important;
+    &.color-brand {
+        color: $brand--clr !important;
+    }
+}

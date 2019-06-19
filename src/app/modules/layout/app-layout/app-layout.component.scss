@@ -1,0 +1,57 @@
+@import './../../../../assets/styles/required';
+.main-content {
+    background-color: $white;
+}
+
+.app-left-panel {
+    box-shadow: 0 0 1px 0 $text--clr;
+    transition: all .15s;
+}
+
+@media (min-width: 360px) {
+    .app-left-panel {
+        display: none;
+        transform: translateX(0);
+        top: 0;
+        background-color: #fff;
+        margin: 0;
+        display: block;
+        position: absolute;
+        height: 100%;
+        z-index: 11;
+        width: 100%;
+        left: -100%;
+    }
+    .hamburger-checkbox {
+        &:checked {
+            +.app-left-panel {
+                display: flex;
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .app-left-panel {
+        display: flex;
+        flex-basis: calcRem(280px);
+        max-width: calcRem(280px);
+        min-width: calcRem(280px);
+        position: static;
+        transform: none;
+        height: auto;
+    }
+    .hamburger-checkbox {
+        &:checked {
+            +.app-left-panel {
+                flex-basis: calcRem(57px);
+                max-width: calcRem(57px);
+                min-width: calcRem(57px);
+                transform: none;
+                overflow: hidden;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@import '../../../../assets/styles/required';
+.nav {
+    .nav-item {
+        .nav-text {
+            border-left: 3px solid transparent;
+            color: $text--clr-1;
+            white-space: nowrap;
+            &:hover {
+                color: $black;
+                font-family: $font-semibold;
+            }
+        }
+        &.active {
+            .nav-text {
+                font-family: $font-bold;
+                i.fa-chevron-right {
+                    position: absolute;
+                    right: calcRem(10px);
+                    top: calcRem(10px);
+                }
+            }
+        }
+    }
+    &.sub-nav {
+        background-color: $light-grey;
+    }
+}
+
+.slide-up {
+    overflow: hidden;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    &.slide-down {
+        -moz-transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -moz-transition-timing-function: ease-in;
+        -webkit-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        max-height: 1000px;
+        overflow: hidden;
+    }
+}
+
+.slide-up:not(.slide-down) li {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.hamburger-close {
+    i {
+        cursor: pointer;
+        right: 20px;
+        top: 20px;
+    }
+}
+
+@media (min-width: 360px) {
+    .nav {
+        .nav-item {
+            &.active {
+                .nav-text {
+                    color: $brand--clr;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav {
+        .nav-item {
+            &.active>.nav-text {
+                color: $black;
+                background-color: $text--clr-2;
+                border-color: $brand--clr;
+            }
+        }
+    }
+}

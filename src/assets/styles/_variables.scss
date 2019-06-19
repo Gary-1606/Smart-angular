@@ -1,0 +1,29 @@
+/**** Common ****/
+
+$base-font-size: 16px;
+$white:#ffffff;
+$black:#000000;
+$dark-grey: #333333;
+$light-grey: #f9f9f9;
+$blue: blue;
+$path-to-fonts: "./assets/fonts/";
+$path-to-images: "./assets/images/";
+/**** Brand color shades ****/
+
+$brand--clr: #0077c8;
+$brand--clr-1: #06a3de;
+$brand--clr-2: #01458C;
+/**** Text color ****/
+
+$text--clr: #4b4a4a;
+$text--clr-1: #555;
+$text--clr-2: #dcdcdc;
+/* Font Config */
+
+$font-regular: opensans-regular;
+$font-semibold: opensans-semibold;
+$font-bold: opensans-bold;
+/**** Anchor ****/
+
+$link--clr: $black;
+$link--hover-clr: $text--clr;

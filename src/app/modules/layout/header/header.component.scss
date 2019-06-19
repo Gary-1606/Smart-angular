@@ -1,0 +1,119 @@
+@import '../../../../assets/styles/required';
+header {
+    border-bottom: calcRem(2px) solid $brand--clr;
+    .logo {
+        .logo-img {
+            // width: calcRem(160px);
+            // height: calcRem(40px);
+            display: flex; // background: url(../../../assets/images/logo.png) no-repeat;
+            // background-size: 100%;
+        }
+    }
+    .hamburger-box {
+        position: relative;
+        width: 24px;
+        z-index: 12;
+        cursor: pointer;
+        margin: 4px 0 0 0;
+        height: 22px;
+        .hamburger-inner {
+            top: 50%;
+            display: block;
+        }
+        .hamburger-inner,
+        .hamburger-inner:after,
+        .hamburger-inner:before {
+            position: absolute;
+            width: 24px;
+            height: 3px;
+            border-radius: 4px;
+            background-color: $brand--clr;
+            display: block;
+            content: "";
+        }
+        .hamburger-inner:before {
+            top: -8px;
+        }
+        .hamburger-inner:after {
+            bottom: -8px;
+        }
+    }
+    .salutation-section {
+        nav {
+            ul {
+                li.nav-item {
+                    .nav-text {
+                        color: $brand--clr;
+                        &.username {
+                            color: $text--clr;
+                        }
+                        i {
+                            font-size: calcRem(26px);
+                            top: 2px;
+                            &.icon-profile {
+                                font-size: calcRem(30px);
+                            }
+                        }
+                        &.color-text-1 {
+                            color: $text--clr-1;
+                        }
+                    }
+                    label {
+                        color: $text--clr;
+                    }
+                    &.user-popover {
+                        position: relative;
+                        .user-popover-content {
+                            position: absolute;
+                            top: calcRem(35px);
+                            right: calcRem(10px);
+                            width: calcRem(200px);
+                            background-color: $white;
+                            border-radius: 3px;
+                            z-index: 999;
+                            box-shadow: 0 1px 10px #eaeaea;
+                            li.nav-item {
+                                padding: 0px 12px;
+                                max-width: 100%;
+                                cursor: pointer;
+                                .nav-text {
+                                    color: $text--clr-1;
+                                }
+                                label {
+                                    color: $text--clr-1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 360px) {
+    header {
+        .logo {
+            .logo-img {
+                width: calcRem(40px);
+                height: calcRem(45px);
+                background: url(./../../../../assets/images/login-logo.svg) no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        .logo {
+            .logo-img {
+                width: calcRem(143px);
+                height: calcRem(50px);
+                background: url(./../../../../assets/images/login-logo.svg) no-repeat;
+                background-size: cover;
+                background-position: 0;
+            }
+        }
+    }
+}

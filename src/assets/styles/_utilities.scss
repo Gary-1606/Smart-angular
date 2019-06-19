@@ -1,0 +1,76 @@
+// common utilities
+.f-bold {
+    font-family: $font-bold;
+}
+
+.f-semibold {
+    font-family: $font-semibold;
+}
+
+.f-regular {
+    font-family: $font-regular;
+}
+
+.text-size-xs {
+    font-size: calcRem(12px);
+}
+
+.text-size-sm {
+    font-size: calcRem(14px);
+}
+
+.text-size-xsm {
+    font-size: calcRem(16px);
+}
+
+.text-size-md {
+    font-size: calcRem(18px);
+}
+
+.text-size-lg {
+    font-size: calcRem(22px);
+}
+
+.text-size-xxl {
+    font-size: calcRem(34px);
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+/* background colors */
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-grey {
+    background-color: $light-grey;
+}
+
+.bg-brand-clr {
+    background: $brand--clr;
+}
+
+.bg-brand-clr-2 {
+    background: $brand--clr-2;
+}
+
+/* color */
+
+.color-brand {
+    color: $brand--clr;
+}
+
+.color-white {
+    color: $white;
+}
+
+.color-text {
+    color: $text--clr;
+}
+
+.color-text-1 {
+    color: $text--clr-1;
+}

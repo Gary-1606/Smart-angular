@@ -1,0 +1,19 @@
+<ng-container *ngIf="!isQuickLinkPage">
+    <app-header></app-header>
+    <main class="d-flex flex-grow-1 flex-column flex-lg-row flex-shrink-0 w-100 position-relative">
+        <input type="checkbox" id="hamburger" class="hamburger-checkbox d-none" />
+        <aside class="app-left-panel">
+            <app-navigation></app-navigation>
+        </aside>
+        <article class="d-flex flex-column flex-grow-1">
+            <section class="main-content d-flex flex-column flex-grow-1 p-3">
+                <router-outlet></router-outlet>
+            </section>
+        </article>
+    </main>
+    <app-footer></app-footer>
+</ng-container>
+
+<ng-container *ngIf="isQuickLinkPage">
+    <router-outlet></router-outlet>
+</ng-container>
