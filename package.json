@@ -26,7 +26,7 @@
         "bootstrap": "^4.1.1",
         "core-js": "^2.4.1",
         "jquery": "^3.3.1",
-        "node-sass": "^4.12.0",
+        "node-sass": "^4.13.1",
         "popper.js": "^1.14.3",
         "rxjs": "^5.5.11",
         "zone.js": "^0.8.19"
